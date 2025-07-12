@@ -1,0 +1,128 @@
+body {
+    background-color: #F3E5D8;
+    font-family: Outfit;
+    word-spacing: 1.6px;
+    letter-spacing: 1.2px;
+    /* overflow-x: hidden; */
+}
+
+body::selection {
+    background-color: #F3E5D8;
+    color: rgb(146, 52, 52);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main .container {
+    width: 50%;
+    margin: 100px 0;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+    color: hsl(30, 10%, 34%);
+}
+
+main .container .image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+main .container .text h1 {
+    font-family: 'Young Serif';
+}
+
+main .container .text .time {
+    padding: 25px;
+    background-color: #F3E5D8;
+    border-radius: 10px;
+}
+
+main .container .text .time::selection {
+    background-color: hsla(14, 45%, 36%, 0.541);
+    color: #F3E5D8;
+}
+
+main .container .text .time h2 {
+    color: hsl(332, 51%, 32%);
+}
+
+main .container .text .time ul li span {
+    font-weight: bold;
+}
+
+main .container .text .time ul li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+main .container .text .ingredients h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 32px;
+    font-family: 'Young Serif';
+}
+
+main .container .text .ingredients ul li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+main .container .text hr {
+    border: 1px solid hsl(30, 18%, 87%);
+}
+
+main .container .text .instructions h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 32px;
+    font-family: 'Young Serif';
+}
+
+main .container .text .instructions ol li {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+main .container .text .instructions ol li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+main .container .text .instructions ol li span {
+    font-weight: bold;
+}
+
+main .container .text .nutrition h2 {
+    color: hsl(14, 45%, 36%);
+    font-size: 32px;
+    font-family: 'Young Serif';
+}
+
+main .container .text .nutrition table {
+    margin: 25px 0;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main .container .text .nutrition table tr td {
+    padding: 12px;
+    border-bottom: 1px solid;
+}
+
+main .container .text .nutrition table tr td:last-child {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+@media (max-width: 752px) {
+    main .container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 753px) and (max-width: 1050px) {
+    main .container {
+        width: 80%;
+        margin: 75px 0;
+    }
+}
